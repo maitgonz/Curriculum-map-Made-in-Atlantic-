@@ -1,0 +1,650 @@
+[
+  {
+    "nombre": "Universidad de Navarra",
+    "lat": 42.8,
+    "lng": -1.66,
+    "region": "Navarra",
+    "nuts": "ES22",
+    "pais": "España",
+    "alianza": ""
+  },
+  {
+    "nombre": "École Centrale de Nantes",
+    "lat": 47.28,
+    "lng": -1.55,
+    "region": "Países del Loira",
+    "nuts": "FRG0",
+    "pais": "Francia",
+    "alianza": ""
+  },
+  {
+    "nombre": "EM Normandie Business School",
+    "lat": 49.49,
+    "lng": 0.1,
+    "region": "Normandía",
+    "nuts": "FRD2",
+    "pais": "Francia",
+    "alianza": ""
+  },
+  {
+    "nombre": "Universidad Pablo de Olavide",
+    "lat": 37.36,
+    "lng": -5.94,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": ""
+  },
+  {
+    "nombre": "Universidad Loyola Andalucía",
+    "lat": 37.41,
+    "lng": -5.93,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": ""
+  },
+  {
+    "nombre": "Universidad Internacional de Andalucía",
+    "lat": 37.38,
+    "lng": -5.99,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": ""
+  },
+  {
+    "nombre": "Universidad Europea de Canarias",
+    "lat": 28.46,
+    "lng": -16.31,
+    "region": "Canarias",
+    "nuts": "ES70",
+    "pais": "España",
+    "alianza": ""
+  },
+  {
+    "nombre": "Universidade da Madeira",
+    "lat": 32.65,
+    "lng": -16.91,
+    "region": "Región Autónoma de Madeira",
+    "nuts": "PT30",
+    "pais": "Portugal",
+    "alianza": ""
+  },
+  {
+    "nombre": "Instituto Superior de Administração e Línguas (ISAL)",
+    "lat": 32.65,
+    "lng": -16.91,
+    "region": "Región Autónoma de Madeira",
+    "nuts": "PT30",
+    "pais": "Portugal",
+    "alianza": ""
+  },
+  {
+    "nombre": "Université de Caen Normandie",
+    "lat": 49.18,
+    "lng": -0.37,
+    "region": "Normandía",
+    "nuts": "FRD2",
+    "pais": "Francia",
+    "alianza": "AcrossEU"
+  },
+  {
+    "nombre": "Maynooth University",
+    "lat": 53.38,
+    "lng": -6.6,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "Arqus"
+  },
+  {
+    "nombre": "Universidade do Minho",
+    "lat": 41.56,
+    "lng": -8.4,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "Arqus"
+  },
+  {
+    "nombre": "Universidad de Granada",
+    "lat": 37.18,
+    "lng": -3.6,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": "Arqus"
+  },
+  {
+    "nombre": "Universidade de Vigo",
+    "lat": 42.24,
+    "lng": -8.72,
+    "region": "Galicia",
+    "nuts": "ES11",
+    "pais": "España",
+    "alianza": "ATHENA PLUS"
+  },
+  {
+    "nombre": "Instituto Politécnico do Porto",
+    "lat": 41.18,
+    "lng": -8.6,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "ATHENA PLUS"
+  },
+  {
+    "nombre": "Trinity College Dublin",
+    "lat": 53.34,
+    "lng": -6.25,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "CHARM-EU"
+  },
+  {
+    "nombre": "Le Mans Université",
+    "lat": 48.01,
+    "lng": 0.2,
+    "region": "Países del Loira",
+    "nuts": "FRG0",
+    "pais": "Francia",
+    "alianza": "COLOURS"
+  },
+  {
+    "nombre": "Universidad Europea del Atlántico",
+    "lat": 43.46,
+    "lng": -3.81,
+    "region": "Cantabria",
+    "nuts": "ES13",
+    "pais": "España",
+    "alianza": "DIVERSE"
+  },
+  {
+    "nombre": "Griffith College",
+    "lat": 53.35,
+    "lng": -6.26,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "DIVERSE"
+  },
+  {
+    "nombre": "Université de Poitiers",
+    "lat": 46.58,
+    "lng": 0.34,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "EC2U"
+  },
+  {
+    "nombre": "Universidade de Coimbra",
+    "lat": 40.2,
+    "lng": -8.41,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "EC2U"
+  },
+  {
+    "nombre": "Dublin City University",
+    "lat": 53.39,
+    "lng": -6.25,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "ECIU University"
+  },
+  {
+    "nombre": "Universidade de Aveiro",
+    "lat": 40.64,
+    "lng": -8.65,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "ECIU University"
+  },
+  {
+    "nombre": "Université de Rennes",
+    "lat": 48.12,
+    "lng": -1.64,
+    "region": "Bretaña",
+    "nuts": "FRH0",
+    "pais": "Francia",
+    "alianza": "EDUC"
+  },
+  {
+    "nombre": "Universidade da Coruña",
+    "lat": 43.37,
+    "lng": -8.41,
+    "region": "Galicia",
+    "nuts": "ES11",
+    "pais": "España",
+    "alianza": "EMERGE"
+  },
+  {
+    "nombre": "Université Bretagne Sud",
+    "lat": 47.75,
+    "lng": -3.36,
+    "region": "Bretaña",
+    "nuts": "FRH0",
+    "pais": "Francia",
+    "alianza": "EMERGE"
+  },
+  {
+    "nombre": "Université Rennes 2",
+    "lat": 48.12,
+    "lng": -1.7,
+    "region": "Bretaña",
+    "nuts": "FRH0",
+    "pais": "Francia",
+    "alianza": "EMERGE"
+  },
+  {
+    "nombre": "University of Limerick",
+    "lat": 52.67,
+    "lng": -8.63,
+    "region": "Región Sur",
+    "nuts": "IE05",
+    "pais": "Irlanda",
+    "alianza": "EMERGE"
+  },
+  {
+    "nombre": "EHU/UPV",
+    "lat": 43.33,
+    "lng": -2.97,
+    "region": "Euskadi",
+    "nuts": "ES21",
+    "pais": "España",
+    "alianza": "ENLIGHT"
+  },
+  {
+    "nombre": "Université de Bordeaux",
+    "lat": 44.84,
+    "lng": -0.58,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "ENLIGHT"
+  },
+  {
+    "nombre": "University of Galway",
+    "lat": 53.27,
+    "lng": -9.06,
+    "region": "Región del Norte y Oeste",
+    "nuts": "IE04",
+    "pais": "Irlanda",
+    "alianza": "ENLIGHT"
+  },
+  {
+    "nombre": "Universidad de Las Palmas de Gran Canaria",
+    "lat": 28.1,
+    "lng": -15.42,
+    "region": "Canarias",
+    "nuts": "ES70",
+    "pais": "España",
+    "alianza": "ERUA"
+  },
+  {
+    "nombre": "Université d'Angers",
+    "lat": 47.47,
+    "lng": -0.55,
+    "region": "Países del Loira",
+    "nuts": "FRG0",
+    "pais": "Francia",
+    "alianza": "EU GREEN"
+  },
+  {
+    "nombre": "Atlantic Technological University",
+    "lat": 53.8,
+    "lng": -9.52,
+    "region": "Región del Norte y Oeste",
+    "nuts": "IE04",
+    "pais": "Irlanda",
+    "alianza": "EU GREEN"
+  },
+  {
+    "nombre": "Universidade de Évora",
+    "lat": 38.57,
+    "lng": -7.91,
+    "region": "Alentejo",
+    "nuts": "PT18",
+    "pais": "Portugal",
+    "alianza": "EU GREEN"
+  },
+  {
+    "nombre": "Mondragon Unibertsitatea",
+    "lat": 43.04,
+    "lng": -2.37,
+    "region": "Euskadi",
+    "nuts": "ES21",
+    "pais": "España",
+    "alianza": "EU4DUAL"
+  },
+  {
+    "nombre": "ESTIA Institute of Technology",
+    "lat": 43.44,
+    "lng": -1.53,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "EU4DUAL"
+  },
+  {
+    "nombre": "Université de La Rochelle",
+    "lat": 46.16,
+    "lng": -1.15,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "EU-CONEXUS"
+  },
+  {
+    "nombre": "South East Technological University",
+    "lat": 52.25,
+    "lng": -7.11,
+    "region": "Región Sur",
+    "nuts": "IE05",
+    "pais": "Irlanda",
+    "alianza": "EU-CONEXUS"
+  },
+  {
+    "nombre": "Bordeaux Sciences Agro",
+    "lat": 44.81,
+    "lng": -0.6,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "EU-GIFT"
+  },
+  {
+    "nombre": "Universidade de Trás-os-Montes e Alto Douro",
+    "lat": 41.29,
+    "lng": -7.74,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "EU-GIFT"
+  },
+  {
+    "nombre": "Universidade do Porto",
+    "lat": 41.15,
+    "lng": -8.61,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "EUGLOH"
+  },
+  {
+    "nombre": "Universidad de Cantabria",
+    "lat": 43.47,
+    "lng": -3.8,
+    "region": "Cantabria",
+    "nuts": "ES13",
+    "pais": "España",
+    "alianza": "EUNICE"
+  },
+  {
+    "nombre": "Universidade dos Açores",
+    "lat": 37.74,
+    "lng": -25.67,
+    "region": "Región Autónoma de Azores",
+    "nuts": "PT20",
+    "pais": "Portugal",
+    "alianza": "EUNICoast"
+  },
+  {
+    "nombre": "Universidade de Santiago de Compostela",
+    "lat": 42.88,
+    "lng": -8.54,
+    "region": "Galicia",
+    "nuts": "ES11",
+    "pais": "España",
+    "alianza": "EUniWell"
+  },
+  {
+    "nombre": "Université de Nantes",
+    "lat": 47.22,
+    "lng": -1.55,
+    "region": "Países del Loira",
+    "nuts": "FRG0",
+    "pais": "Francia",
+    "alianza": "EUniWell"
+  },
+  {
+    "nombre": "Université de Limoges",
+    "lat": 45.83,
+    "lng": 1.26,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "EUPeace"
+  },
+  {
+    "nombre": "Technological University Dublin",
+    "lat": 53.35,
+    "lng": -6.26,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "EUt+"
+  },
+  {
+    "nombre": "Universidade Nova de Lisboa",
+    "lat": 38.75,
+    "lng": -9.16,
+    "region": "Área Metropolitana de Lisboa",
+    "nuts": "PT17",
+    "pais": "Portugal",
+    "alianza": "EUTOPIA"
+  },
+  {
+    "nombre": "Universidad de Oviedo",
+    "lat": 43.36,
+    "lng": -5.85,
+    "region": "Asturias",
+    "nuts": "ES12",
+    "pais": "España",
+    "alianza": "INGENIUM"
+  },
+  {
+    "nombre": "Munster Technological University",
+    "lat": 51.88,
+    "lng": -8.53,
+    "region": "Región Sur",
+    "nuts": "IE05",
+    "pais": "Irlanda",
+    "alianza": "INGENIUM"
+  },
+  {
+    "nombre": "Université de Rouen Normandie",
+    "lat": 49.44,
+    "lng": 1.09,
+    "region": "Normandía",
+    "nuts": "FRD2",
+    "pais": "Francia",
+    "alianza": "INGENIUM"
+  },
+  {
+    "nombre": "ISCTE – Instituto Universitário de Lisboa",
+    "lat": 38.75,
+    "lng": -9.15,
+    "region": "Área Metropolitana de Lisboa",
+    "nuts": "PT17",
+    "pais": "Portugal",
+    "alianza": "PIONEER"
+  },
+  {
+    "nombre": "Polytechnic of Leiria",
+    "lat": 39.75,
+    "lng": -8.81,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "RUN-EU"
+  },
+  {
+    "nombre": "Polytechnic of Cávado and Ave",
+    "lat": 41.54,
+    "lng": -8.62,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "RUN-EU"
+  },
+  {
+    "nombre": "Université de Bretagne Occidentale",
+    "lat": 48.4,
+    "lng": -4.49,
+    "region": "Bretaña",
+    "nuts": "FRH0",
+    "pais": "Francia",
+    "alianza": "SEA-EU"
+  },
+  {
+    "nombre": "Universidade do Algarve",
+    "lat": 37.02,
+    "lng": -7.93,
+    "region": "Algarve",
+    "nuts": "PT15",
+    "pais": "Portugal",
+    "alianza": "SEA-EU"
+  },
+  {
+    "nombre": "Universidad de Cádiz",
+    "lat": 36.53,
+    "lng": -6.29,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": "SEA-EU"
+  },
+  {
+    "nombre": "Polytechnic Institute of Bragança",
+    "lat": 41.81,
+    "lng": -6.76,
+    "region": "Norte",
+    "nuts": "PT11",
+    "pais": "Portugal",
+    "alianza": "STARS EU"
+  },
+  {
+    "nombre": "Universidad de La Laguna",
+    "lat": 28.48,
+    "lng": -16.32,
+    "region": "Canarias",
+    "nuts": "ES70",
+    "pais": "España",
+    "alianza": "STARS EU"
+  },
+  {
+    "nombre": "Universidade Católica Portuguesa",
+    "lat": 38.71,
+    "lng": -9.19,
+    "region": "Área Metropolitana de Lisboa",
+    "nuts": "PT17",
+    "pais": "Portugal",
+    "alianza": "T4EU"
+  },
+  {
+    "nombre": "Universidad de Sevilla",
+    "lat": 37.36,
+    "lng": -5.99,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": "ULYSSEUS"
+  },
+  {
+    "nombre": "University College Dublin",
+    "lat": 53.31,
+    "lng": -6.22,
+    "region": "Región Este y Midlands",
+    "nuts": "IE06",
+    "pais": "Irlanda",
+    "alianza": "Una Europa"
+  },
+  {
+    "nombre": "Universidad de Deusto",
+    "lat": 43.26,
+    "lng": -2.94,
+    "region": "Euskadi",
+    "nuts": "ES21",
+    "pais": "España",
+    "alianza": "UNIC"
+  },
+  {
+    "nombre": "University College Cork",
+    "lat": 51.89,
+    "lng": -8.49,
+    "region": "Región Sur",
+    "nuts": "IE05",
+    "pais": "Irlanda",
+    "alianza": "UNIC"
+  },
+  {
+    "nombre": "Polytechnic Institute of Coimbra",
+    "lat": 40.21,
+    "lng": -8.43,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "UNIgreen"
+  },
+  {
+    "nombre": "Universidad de Málaga",
+    "lat": 36.72,
+    "lng": -4.42,
+    "region": "Andalucía",
+    "nuts": "ES61",
+    "pais": "España",
+    "alianza": "UNINOVIS"
+  },
+  {
+    "nombre": "Universidad Pública de Navarra",
+    "lat": 42.82,
+    "lng": -1.64,
+    "region": "Navarra",
+    "nuts": "ES22",
+    "pais": "España",
+    "alianza": "UNITA"
+  },
+  {
+    "nombre": "Université de Pau et des Pays de l'Adour",
+    "lat": 43.29,
+    "lng": -0.37,
+    "region": "Nueva Aquitania",
+    "nuts": "FRI1",
+    "pais": "Francia",
+    "alianza": "UNITA"
+  },
+  {
+    "nombre": "Universidade da Beira Interior",
+    "lat": 40.28,
+    "lng": -7.5,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "UNITA"
+  },
+  {
+    "nombre": "Polytechnic of Guarda",
+    "lat": 40.54,
+    "lng": -7.27,
+    "region": "Centro",
+    "nuts": "PT16",
+    "pais": "Portugal",
+    "alianza": "UNITA"
+  },
+  {
+    "nombre": "Universidade de Lisboa",
+    "lat": 38.74,
+    "lng": -9.16,
+    "region": "Área Metropolitana de Lisboa",
+    "nuts": "PT17",
+    "pais": "Portugal",
+    "alianza": "Unite!"
+  }
+]
