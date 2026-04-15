@@ -1,6 +1,13 @@
 // Crear el mapa
 const map = L.map('map').setView([43.5, -6.5], 5);
 
+// Crear panes
+map.createPane('paneLineas');
+map.getPane('paneLineas').style.zIndex = 400;
+
+map.createPane('paneNodos');
+map.getPane('paneNodos').style.zIndex = 500;
+
 // Añadir mapa base
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
@@ -92,6 +99,7 @@ const paletaColores = [
 
 // Colores asignados a cada alianza
 const coloresPorAlianza = {};
+const coloresPorPrograma = {};
 
 // Lista de marcadores para poder filtrarlos
 let marcadoresUniversidades = [];
@@ -293,8 +301,12 @@ function openSidePanel(data) {
 
 // Función para obtener color
 function obtenerColorAlianza(nombreAlianza) {
-  if (!nombreAlianza || nombreAlianza.trim() === "") {
-    return "#9ca3af"; // gris para sin alianza
+  if (
+    !nombreAlianza ||
+    nombreAlianza.trim() === "" ||
+    nombreAlianza === "Sin alianza europea"
+  ) {
+    return "#9ca3af"; // gris
   }
 
   if (!coloresPorAlianza[nombreAlianza]) {
@@ -394,9 +406,9 @@ function dibujarLineasProgramas(programas) {
             {
                 color: programa.color,
                 weight: 2,
-                opacity: 0.8
-            }
-            );
+                opacity: 0.8,
+                pane: 'paneLineas'
+            });
 
         linea.on('click', function () {
           console.log("RAW PROGRAMA coordinators:", programa.coordinators);
@@ -427,7 +439,8 @@ function dibujarLineasProgramas(programas) {
             {
                 color: programa.color,
                 weight: 12,
-                opacity: 0
+                opacity: 0,
+                pane: 'paneLineas'
             }
         );
 
@@ -478,12 +491,6 @@ function dibujarLineasProgramas(programas) {
         linea.addTo(map);
         lineaHover.addTo(map);
 
-        Object.values(map._layers).forEach(layer => {
-        if (layer instanceof L.CircleMarker) {
-            layer.bringToFront();
-        }
-        });
-
         console.log("Programme line:", programa.programName);
 
         lineasProgramas.push({
@@ -527,7 +534,8 @@ fetch('data/universidades.json')
         fillColor: color,
         color: "#ffffff",
         weight: 1.5,
-        fillOpacity: 0.9
+        fillOpacity: 0.9,
+        pane: 'paneNodos'
       });
 
       universidadesPorNombre[universidad.nombre] = {
@@ -591,9 +599,14 @@ fetch('data/universidades.json')
     alianzasOrdenadas.forEach(alianza => {
       const option = document.createElement('option');
       option.value = alianza;
-      option.textContent = alianza;
+      option.textContent = `● ${alianza}`;
+
+      // color de la opción
+      option.style.color = obtenerColorAlianza(alianza);
+
       alianzaSelect.appendChild(option);
     });
+
     // Sort countries
     const paisesOrdenados = Array.from(paisesUnicos)
     .sort((a, b) => a.localeCompare(b));
@@ -621,14 +634,6 @@ fetch('data/universidades.json')
     // Sort programas
     const programasOrdenados = Array.from(programasUnicos)
     .sort((a, b) => a.localeCompare(b));
-    
-    // Fill programas dropdown
-    programasOrdenados.forEach(programa => {
-      const option = document.createElement('option');
-      option.value = programa;
-      option.textContent = programa;
-      programaSelect.appendChild(option);
-    });
 
     // Activar filtro
     console.log("alianzaSelect:", alianzaSelect);
@@ -642,13 +647,27 @@ fetch('data/universidades.json')
     if (regionSelect) regionSelect.addEventListener('change', aplicarFiltro);
 
     fetch('data/programas.json')
-  .then(response => response.json())
-  .then(programas => {
-    dibujarLineasProgramas(programas);
-  })
-  .catch(error => {
-    console.error('Error loading programas.json:', error);
-  });
+      .then(response => response.json())
+      .then(programas => {
+        programas.forEach(programa => {
+          if (programa.programName && programa.color) {
+            coloresPorPrograma[programa.programName] = programa.color;
+          }
+        });
+
+        programasOrdenados.forEach(programa => {
+          const option = document.createElement('option');
+          option.value = programa;
+          option.textContent = `● ${programa}`;
+          option.style.color = coloresPorPrograma[programa] || "#000";
+          programaSelect.appendChild(option);
+        });
+
+        dibujarLineasProgramas(programas);
+      })
+      .catch(error => {
+        console.error('Error loading programas.json:', error);
+      });
 
   })
   .catch(error => {

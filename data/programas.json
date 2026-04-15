@@ -1,7 +1,7 @@
 [
   {
   "programName": "Environmental Contamination and Toxicology",
-  "color": "#FFEA4D",
+  "color": "#1363D4",
   "status": "Running",
   "programmeType": "Master",
   "universities": [
@@ -55,7 +55,7 @@
 },
   {
     "programName": "Global Media, Democracy and Digital Power",
-    "color": "#83FC3A",
+    "color": "#4A9900",
     "status": "In development",
     "programmeType": "Master",
     "universities": [
