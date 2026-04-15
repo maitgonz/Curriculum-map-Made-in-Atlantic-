@@ -33,31 +33,61 @@ fetch('data/regiones_nuts2.geojson')
 
 // References to dropdowns
 const alianzaSelect = document.getElementById('alianzaSelect');
-const paisSelect = document.getElementById('paisSelect');
+const programaSelect = document.getElementById('programaSelect');
 const regionSelect = document.getElementById('regionSelect');
+const paisSelect = document.getElementById('paisSelect');
+
+const closePanelButton = document.getElementById('close-panel');
+const sidePanel = document.getElementById('side-panel');
+
+function closeSidePanel() {
+  if (sidePanel) {
+    sidePanel.classList.add("hidden");
+  }
+}
+
+if (closePanelButton) {
+  closePanelButton.addEventListener('click', closeSidePanel);
+}
 
 // TU PALETA DE COLORES
 const paletaColores = [
-  "#ff2323",
-  "#c40062",
-  "#fa91d7",
-  "#af06d9",
-  "#ae69fc",
-  "#4821d6",
-  "#57a6ff",
-  "#1470e9",
-  "#24e1fa",
-  "#8bf0e2",
-  "#9de0ff",
-  "#25a80b",
-  "#7de408",
-  "#d3f753",
+  "#b80000",
+  "#ff1414",
+  "#ffa8a8",
+  "#cc1a91",
+  "#ff45d7",
+  "#fc96e2",
+  "#9b02af",
+  "#de54f0",
+  "#b679f0",
+  "#bd1dfc",
+  "#7e00af",
+  "#e49fff",
+  "#9488ff",
+  "#5b49ff",
+  "#0509cc",
+  "#81c6ff",
+  "#00a2ff",
+  "#0084d1",
+  "#25b9d3",
+  "#19e9f0",
+  "#009b6c",
+  "#0c5a43",
+  "#5adaba",
+  "#35fc60",
+  "#02ad27",
+  "#8ecf74",
+  "#88eb08",
+  "#668f30",
+  "#ebe704",
+  "#dfab00",
   "#c98b3a",
-  "#fbff2d",
+  "#927d44",
   "#ffd04d",
   "#ffb349",
-  "#fd883a",
-  "#ff7452"
+  "#ff9c40",
+  "#ff8800",
 ];
 
 // Colores asignados a cada alianza
@@ -78,6 +108,182 @@ function openSidePanel(data) {
   }
 
   panel.classList.remove("hidden");
+
+  if (data.type === "university") {
+    const allianceCircle = data.allianceColor
+        ? `<span style="color:${data.allianceColor}; font-size: 24px; line-height: 1; vertical-align: middle; margin-right: 6px;">●</span>`
+        : "";
+
+    const allianceSection = data.allianceName
+      ? `
+        <div class="panel-section">
+          <h4>European Universities alliance</h4>
+          <p>
+            ${allianceCircle}
+            <strong>${data.allianceName}</strong>
+          </p>
+          ${
+            data.allianceUrl
+              ? `<p><a class="alliance-link" style="color:${data.allianceColor || '#475569'};" href="${data.allianceUrl}" target="_blank" rel="noopener noreferrer">${data.allianceName} website</a></p>`
+              : ""
+          }
+        </div>
+      `
+      : `
+        <div class="panel-section">
+          <h4>European Universities alliance</h4>
+          <p>No European Universities alliance identified</p>
+        </div>
+      `;
+
+    const programmesSection =
+      data.programmes && data.programmes.length > 0
+        ? `
+          <div class="panel-section">
+            <h4>Atlantic joint programmes</h4>
+            ${data.programmes
+              .map(programme => {
+                const universitiesList =
+                    programme.atlanticPartners && programme.atlanticPartners.length > 0
+                    ? `
+                      <ul style="margin: 6px 0 0 18px; padding: 0; font-size: 13px; line-height: 1.5;">
+                        ${programme.atlanticPartners
+                          .map(uni => {
+                            const extra = uni.atlantic === false ? ", non-Atlantic" : "";
+                            const line = `${uni.name}${uni.role ? ` (${uni.role}${extra})` : ""}`;
+                            return (uni.role === "Coordinator" || uni.role === "Co-coordinator")
+                              ? `<li><strong>${line}</strong></li>`
+                              : `<li>${line}</li>`;
+                          })
+                          .join("")}
+                      </ul>
+                    `
+                    : `<p style="margin: 6px 0 0 0; font-size: 13px; line-height: 1.5;">No Atlantic partner universities listed</p>`;
+
+                const ownRole =
+                  programme.role === "Coordinator" || programme.role === "Co-coordinator"
+                    ? `<strong>${programme.role}</strong>`
+                    : `${programme.role || "-"}`;
+
+                const programmeLink = programme.url
+                  ? `<p style="margin: 10px 0 0 0; font-size: 13px; font-style: italic;">
+                      <a href="${programme.url}" target="_blank" rel="noopener noreferrer" style="color:${data.allianceColor || '#475569'};">
+                        Programme link
+                      </a>
+                    </p>`
+                  : "";
+
+                return `
+                  <div style="
+                    margin: 12px 0 14px 0;
+                    padding: 12px 14px;
+                    background: ${data.allianceColor ? `${data.allianceColor}1A` : '#f3f4f6'};
+                    border-radius: 10px;
+                  ">
+                    <p style="margin: 0 0 10px 0; font-weight: 700;"> ${programme.name}</p>
+
+                    <p style="margin: 0 0 8px 0; font-size: 13px; line-height: 1.4;">
+                      <strong>Role:</strong> ${ownRole}
+                    </p>
+
+                    <p style="margin: 0; font-weight: 700;">Atlantic universities involved:</p>
+                    ${universitiesList}
+
+                    ${programmeLink}
+                  </div>
+                `;
+              })
+              .join("")}
+          </div>
+        `
+        : `
+          <div class="panel-section">
+            <h4>Atlantic joint programmes</h4>
+            <p>No joint programmes with Atlantic partners identified</p>
+          </div>
+        `;
+
+    content.innerHTML = `
+      <h2>${data.name || "No name"}</h2>
+      <p class="panel-subtitle">${data.region || "-"}</p>
+      <p class="panel-subtitle">${data.country || "-"}</p>
+
+      ${allianceSection}
+      ${programmesSection}
+    `;
+
+    return;
+  }
+
+  if (data.type === "programme") {
+    console.log("PANEL coordinators:", data.coordinators);
+    console.log("PANEL atlanticPartners:", data.atlanticPartners);
+    console.log("PANEL status:", data.status);
+    console.log("PANEL programmeType:", data.programmeType);
+    console.log("PANEL url:", data.url);
+
+    const subtitleParts = [];
+
+    if (data.status) subtitleParts.push(data.status);
+    if (data.programmeType) subtitleParts.push(data.programmeType);
+
+    const subtitleHtml = subtitleParts.length > 0
+      ? `<p class="panel-subtitle">${subtitleParts.join(" · ")}</p>`
+      : "";
+
+    const coordinatorsHtml =
+      data.coordinators && data.coordinators.length > 0
+        ? `<ul>
+            ${data.coordinators
+              .map(uni => {
+                const line = `${uni.name}${uni.role ? ` (${uni.role})` : ""}`;
+                return (uni.role === "Coordinator" || uni.role === "Co-coordinator")
+                  ? `<li><strong>${line}</strong></li>`
+                  : `<li>${line}</li>`;
+              })
+              .join("")}
+          </ul>`
+        : `<p>No coordinator identified</p>`;
+
+    const partnersHtml =
+      data.atlanticPartners && data.atlanticPartners.length > 0
+        ? `<ul>
+            ${data.atlanticPartners
+              .map(uni => {
+                const line = `${uni.name}${uni.role ? ` (${uni.role})` : ""}`;
+                return (uni.role === "Coordinator" || uni.role === "Co-coordinator")
+                  ? `<li><strong>${line}</strong></li>`
+                  : `<li>${line}</li>`;
+              })
+              .join("")}
+          </ul>`
+        : `<p>No Atlantic partners identified</p>`;
+
+    const linkHtml = data.url
+      ? `<p><a class="alliance-link" style="color:${data.color || '#475569'};" href="${data.url}" target="_blank" rel="noopener noreferrer">Programme website</a></p>`
+      : "";
+
+    content.innerHTML = `
+      <h2>${data.name || "No name"}</h2>
+      ${subtitleHtml}
+
+      <div class="panel-section">
+        <h4>Coordinating institution</h4>
+        ${coordinatorsHtml}
+      </div>
+
+      <div class="panel-section">
+        <h4>Atlantic partners</h4>
+        ${partnersHtml}
+      </div>
+
+      <div class="panel-section">
+        ${linkHtml}
+      </div>
+    `;
+
+    return;
+  }
 
   content.innerHTML = `
     <h3>${data.name || "No name"}</h3>
@@ -105,8 +311,9 @@ function obtenerColorAlianza(nombreAlianza) {
 // Function to apply filters
 function aplicarFiltro() {
   const alianzaSeleccionada = alianzaSelect.value;
-  const paisSeleccionado = paisSelect.value;
+  const programaSeleccionado = programaSelect.value;
   const regionSeleccionada = regionSelect.value;
+  const paisSeleccionado = paisSelect.value;
 
   const universidadesVisibles = new Set();
 
@@ -123,7 +330,11 @@ function aplicarFiltro() {
       regionSeleccionada === "todas" ||
       item.region === regionSeleccionada;
 
-    const mostrar = coincideAlianza && coincidePais && coincideRegion;
+    const coincidePrograma =
+      programaSeleccionado === "todos" ||
+      (item.programmes && item.programmes.some(p => p.name === programaSeleccionado));
+
+    const mostrar = coincideAlianza && coincidePais && coincideRegion && coincidePrograma;
 
    if (mostrar) {
         item.marker.addTo(map);
@@ -135,16 +346,24 @@ function aplicarFiltro() {
   });
 
   lineasProgramas.forEach(item => {
+    const coincideProgramaLinea =
+      programaSeleccionado === "todos" ||
+      item.programmeName === programaSeleccionado;
+
+    console.log("Selected programme:", programaSeleccionado);
+    console.log("Line programme:", item.programmeName);
+
     const mostrarLinea =
-      universidadesVisibles.has(item.universityA) ||
-      universidadesVisibles.has(item.universityB);
+      (universidadesVisibles.has(item.universityA) ||
+      universidadesVisibles.has(item.universityB)) &&
+      coincideProgramaLinea;
 
     if (mostrarLinea) {
-        item.visible.addTo(map);
-        item.hover.addTo(map);
+      item.visible.addTo(map);
+      item.hover.addTo(map);
     } else {
-        map.removeLayer(item.visible);
-        map.removeLayer(item.hover);
+      map.removeLayer(item.visible);
+      map.removeLayer(item.hover);
     }
   });
 }
@@ -179,6 +398,26 @@ function dibujarLineasProgramas(programas) {
             }
             );
 
+        linea.on('click', function () {
+          console.log("RAW PROGRAMA coordinators:", programa.coordinators);
+          console.log("RAW PROGRAMA atlanticPartners:", programa.atlanticPartners);
+          console.log("RAW PROGRAMA universities:", programa.universities);
+          console.log("RAW PROGRAMA status:", programa.status);
+          console.log("RAW PROGRAMA programmeType:", programa.programmeType);
+          console.log("RAW PROGRAMA url:", programa.url);
+
+          openSidePanel({
+            type: "programme",
+            name: programa.programName,
+            status: programa.status || "",
+            programmeType: programa.programmeType || "",
+            coordinators: programa.coordinators || [],
+            atlanticPartners: programa.atlanticPartners || programa.universities || [],
+            url: programa.url || "",
+            color: programa.color || "#475569"
+          });
+        });
+
         // Línea invisible (para hover)
         const lineaHover = L.polyline(
             [
@@ -192,22 +431,49 @@ function dibujarLineasProgramas(programas) {
             }
         );
 
+        lineaHover.on('click', function () {
+          console.log("RAW PROGRAMA coordinators:", programa.coordinators);
+          console.log("RAW PROGRAMA atlanticPartners:", programa.atlanticPartners);
+          console.log("RAW PROGRAMA universities:", programa.universities);
+          console.log("RAW PROGRAMA status:", programa.status);
+          console.log("RAW PROGRAMA programmeType:", programa.programmeType);
+          console.log("RAW PROGRAMA url:", programa.url);
+
+          openSidePanel({
+            type: "programme",
+            name: programa.programName,
+            status: programa.status || "",
+            programmeType: programa.programmeType || "",
+            coordinators: programa.coordinators || [],
+            atlanticPartners: programa.atlanticPartners || programa.universities || [],
+            url: programa.url || "",
+            color: programa.color || "#475569"
+          });
+        });
+
         const listadoUniversidades = programa.universities
             .map(uni => `${uni.name} — ${uni.role}`)
             .join('<br>');
 
-        lineaHover.bindPopup(`
-            <strong>${programa.programName}</strong><br><br>
-            ${listadoUniversidades}
-        `);
-
-            lineaHover.on('mouseover', function () {
-            this.openPopup();
+        lineaHover.bindTooltip(`
+          <strong>${programa.programName}</strong><br><br>
+          ${listadoUniversidades}
+        `, {
+          sticky: true
         });
 
-            lineaHover.on('mouseout', function () {
-            this.closePopup();
-        });
+            lineaHover.on('click', function () {
+            openSidePanel({
+              type: "programme",
+              name: programa.programName,
+              status: programa.status || "",
+              programmeType: programa.programmeType || "",
+              coordinators: programa.coordinators || [],
+              atlanticPartners: programa.atlanticPartners || [],
+              url: programa.url || "",
+              color: programa.color || "#475569"
+            });
+          });
 
         linea.addTo(map);
         lineaHover.addTo(map);
@@ -218,12 +484,21 @@ function dibujarLineasProgramas(programas) {
         }
         });
 
+        console.log("Programme line:", programa.programName);
+
         lineasProgramas.push({
-            visible: linea,
-            hover: lineaHover,
-            universityA: uniA.name,
-            universityB: uniB.name
-        });
+          visible: linea,
+          hover: lineaHover,
+          universityA: uniA.name,
+          universityB: uniB.name,
+          programmeName: programa.programName,
+          status: programa.status || "",
+          programmeType: programa.programmeType || "",
+          coordinators: programa.coordinators || [],
+          atlanticPartners: programa.atlanticPartners || programa.universities || [],
+          url: programa.url || "",
+          color: programa.color || "#475569"
+      });
       }
     }
   });
@@ -235,8 +510,9 @@ fetch('data/universidades.json')
   .then(universidades => {
 
     const alianzasUnicas = new Set();
-    const paisesUnicos = new Set();
+    const programasUnicos = new Set();
     const regionesUnicas = new Map();
+    const paisesUnicos = new Set();
 
     universidades.forEach(universidad => {
 
@@ -267,10 +543,16 @@ fetch('data/universidades.json')
 
       punto.on('click', function () {
         openSidePanel({
-            type: "university",
-            name: universidad.nombre
+          type: "university",
+          name: universidad.nombre,
+          region: universidad.region,
+          country: universidad.pais,
+          allianceName: universidad.alianza && universidad.alianza.trim() !== "" ? universidad.alianza : null,
+          allianceColor: obtenerColorAlianza(universidad.alianza),
+          allianceUrl: universidad.alianza_url || null,
+          programmes: universidad.programmes || []
         });
-        });
+      });
 
       punto.addTo(map);
       punto.bringToFront();
@@ -280,8 +562,9 @@ fetch('data/universidades.json')
         name: universidad.nombre,
         alianza: alianza,
         pais: universidad.pais,
-        region: universidad.nuts
-        });
+        region: universidad.nuts,
+        programmes: universidad.programmes || []
+      });
 
       paisesUnicos.add(universidad.pais);
 
@@ -291,6 +574,13 @@ fetch('data/universidades.json')
 
         alianzasUnicas.add(alianza);
 
+        if (universidad.programmes && universidad.programmes.length > 0) {
+          universidad.programmes.forEach(p => {
+            if (p.name) {
+              programasUnicos.add(p.name);
+            }
+          });
+        }
     });
 
     // Ordenar alianzas
@@ -328,10 +618,28 @@ fetch('data/universidades.json')
     regionSelect.appendChild(option);
     });
 
+    // Sort programas
+    const programasOrdenados = Array.from(programasUnicos)
+    .sort((a, b) => a.localeCompare(b));
+    
+    // Fill programas dropdown
+    programasOrdenados.forEach(programa => {
+      const option = document.createElement('option');
+      option.value = programa;
+      option.textContent = programa;
+      programaSelect.appendChild(option);
+    });
+
     // Activar filtro
-    alianzaSelect.addEventListener('change', aplicarFiltro);
-    paisSelect.addEventListener('change', aplicarFiltro);
-    regionSelect.addEventListener('change', aplicarFiltro);
+    console.log("alianzaSelect:", alianzaSelect);
+    console.log("programaSelect:", programaSelect);
+    console.log("paisSelect:", paisSelect);
+    console.log("regionSelect:", regionSelect);
+
+    if (alianzaSelect) alianzaSelect.addEventListener('change', aplicarFiltro);
+    if (programaSelect) programaSelect.addEventListener('change', aplicarFiltro);
+    if (paisSelect) paisSelect.addEventListener('change', aplicarFiltro);
+    if (regionSelect) regionSelect.addEventListener('change', aplicarFiltro);
 
     fetch('data/programas.json')
   .then(response => response.json())

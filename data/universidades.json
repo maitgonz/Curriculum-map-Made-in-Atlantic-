@@ -6,7 +6,8 @@
     "region": "Navarra",
     "nuts": "ES22",
     "pais": "España",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "École Centrale de Nantes",
@@ -15,7 +16,19 @@
     "region": "Países del Loira",
     "nuts": "FRG0",
     "pais": "Francia",
-    "alianza": ""
+    "alianza": "",
+    "programmes": [
+      {
+        "name": "Renewable Energy in the Marine Environment",
+        "type": "Joint Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "University College Cork", "role": "Partner" }
+        ],
+        "url": "https://master-remplus2.eu/"
+      }
+    ]
   },
   {
     "nombre": "EM Normandie Business School",
@@ -24,7 +37,8 @@
     "region": "Normandía",
     "nuts": "FRD2",
     "pais": "Francia",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Universidad Pablo de Olavide",
@@ -33,7 +47,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Universidad Loyola Andalucía",
@@ -42,7 +57,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Universidad Internacional de Andalucía",
@@ -51,7 +67,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Universidad Europea de Canarias",
@@ -60,7 +77,8 @@
     "region": "Canarias",
     "nuts": "ES70",
     "pais": "España",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Universidade da Madeira",
@@ -69,7 +87,8 @@
     "region": "Región Autónoma de Madeira",
     "nuts": "PT30",
     "pais": "Portugal",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Instituto Superior de Administração e Línguas (ISAL)",
@@ -78,7 +97,8 @@
     "region": "Región Autónoma de Madeira",
     "nuts": "PT30",
     "pais": "Portugal",
-    "alianza": ""
+    "alianza": "",
+    "programmes": []
   },
   {
     "nombre": "Université de Caen Normandie",
@@ -87,7 +107,9 @@
     "region": "Normandía",
     "nuts": "FRD2",
     "pais": "Francia",
-    "alianza": "AcrossEU"
+    "alianza": "AcrossEU",
+    "alianza_url": "https://www.acrosseu.org/",
+    "programmes": []
   },
   {
     "nombre": "Maynooth University",
@@ -96,7 +118,8 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "Arqus"
+    "alianza": "Arqus",
+    "alianza_url": "https://arqus-alliance.eu/"
   },
   {
     "nombre": "Universidade do Minho",
@@ -105,7 +128,8 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "Arqus"
+    "alianza": "Arqus",
+    "alianza_url": "https://arqus-alliance.eu/"
   },
   {
     "nombre": "Universidad de Granada",
@@ -114,7 +138,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": "Arqus"
+    "alianza": "Arqus",
+    "alianza_url": "https://arqus-alliance.eu/"
   },
   {
     "nombre": "Universidade de Vigo",
@@ -123,7 +148,8 @@
     "region": "Galicia",
     "nuts": "ES11",
     "pais": "España",
-    "alianza": "ATHENA PLUS"
+    "alianza": "ATHENA PLUS",
+    "alianza_url": "https://athenauni.eu/"
   },
   {
     "nombre": "Instituto Politécnico do Porto",
@@ -132,7 +158,8 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "ATHENA PLUS"
+    "alianza": "ATHENA PLUS",
+    "alianza_url": "https://athenauni.eu/"
   },
   {
     "nombre": "Trinity College Dublin",
@@ -141,7 +168,9 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "CHARM-EU"
+    "alianza": "CHARM-EU",
+    "alianza_url": "https://charm-eu.eu/"
+
   },
   {
     "nombre": "Le Mans Université",
@@ -150,7 +179,8 @@
     "region": "Países del Loira",
     "nuts": "FRG0",
     "pais": "Francia",
-    "alianza": "COLOURS"
+    "alianza": "COLOURS",
+    "alianza_url": "https://colours-alliance.eu/"
   },
   {
     "nombre": "Universidad Europea del Atlántico",
@@ -159,7 +189,8 @@
     "region": "Cantabria",
     "nuts": "ES13",
     "pais": "España",
-    "alianza": "DIVERSE"
+    "alianza": "DIVERSE",
+    "alianza_url": "https://diverse-university.eu/"
   },
   {
     "nombre": "Griffith College",
@@ -168,7 +199,8 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "DIVERSE"
+    "alianza": "DIVERSE",
+    "alianza_url": "https://diverse-university.eu/"
   },
   {
     "nombre": "Université de Poitiers",
@@ -177,7 +209,8 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "EC2U"
+    "alianza": "EC2U",
+    "alianza_url": "https://ec2u.eu/"
   },
   {
     "nombre": "Universidade de Coimbra",
@@ -186,7 +219,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "EC2U"
+    "alianza": "EC2U",
+    "alianza_url": "https://ec2u.eu/"
   },
   {
     "nombre": "Dublin City University",
@@ -195,7 +229,8 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "ECIU University"
+    "alianza": "ECIU University",
+    "alianza_url": "https://www.eciu.eu/"
   },
   {
     "nombre": "Universidade de Aveiro",
@@ -204,7 +239,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "ECIU University"
+    "alianza": "ECIU University",
+    "alianza_url": "https://www.eciu.eu/"
   },
   {
     "nombre": "Université de Rennes",
@@ -213,7 +249,8 @@
     "region": "Bretaña",
     "nuts": "FRH0",
     "pais": "Francia",
-    "alianza": "EDUC"
+    "alianza": "EDUC",
+    "alianza_url": "https://educalliance.eu/"
   },
   {
     "nombre": "Universidade da Coruña",
@@ -222,7 +259,8 @@
     "region": "Galicia",
     "nuts": "ES11",
     "pais": "España",
-    "alianza": "EMERGE"
+    "alianza": "EMERGE",
+    "alianza_url": "https://euemerge.eu/"
   },
   {
     "nombre": "Université Bretagne Sud",
@@ -231,7 +269,8 @@
     "region": "Bretaña",
     "nuts": "FRH0",
     "pais": "Francia",
-    "alianza": "EMERGE"
+    "alianza": "EMERGE",
+    "alianza_url": "https://euemerge.eu/"
   },
   {
     "nombre": "Université Rennes 2",
@@ -240,7 +279,8 @@
     "region": "Bretaña",
     "nuts": "FRH0",
     "pais": "Francia",
-    "alianza": "EMERGE"
+    "alianza": "EMERGE",
+    "alianza_url": "https://euemerge.eu/"
   },
   {
     "nombre": "University of Limerick",
@@ -249,7 +289,8 @@
     "region": "Región Sur",
     "nuts": "IE05",
     "pais": "Irlanda",
-    "alianza": "EMERGE"
+    "alianza": "EMERGE",
+    "alianza_url": "https://euemerge.eu/"
   },
   {
     "nombre": "EHU/UPV",
@@ -258,7 +299,69 @@
     "region": "Euskadi",
     "nuts": "ES21",
     "pais": "España",
-    "alianza": "ENLIGHT"
+    "alianza": "ENLIGHT",
+    "alianza_url": "https://enlight-eu.org/",
+    "programmes": [
+      {
+        "name": "Environmental Contamination and Toxicology",
+        "type": "Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "Université de Bordeaux", "role": "Partner" },
+          { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" },
+          { "name": "Universidade do Porto", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-environmental-contamination-toxicology"
+      },
+      {
+        "name": "Renewable Energy in the Marine Environment",
+        "type": "Joint Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "University College Cork", "role": "Partner" },
+          { "name": "École Centrale de Nantes", "role": "Partner" }
+        ],
+        "url": "https://master-remplus2.eu/"
+      },
+      {
+        "name": "European Sustainable Cities and Communities",
+        "type": "Joint Bachelor",
+        "role": "Coordinator",
+        "atlanticPartners": [],
+        "url": ""
+      },
+      {
+        "name": "Global Media, Democracy and Digital Power",
+        "type": "Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "University of Galway", "role": "Coordinator" }
+        ],
+        "url": ""
+      },
+      {
+        "name": "Marine Environment and Resources (MER)",
+        "type": "Erasmus Mundus Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "Université de Bordeaux", "role": "Partner" },
+          { "name": "Universidade dos Açores", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-environment-resources-new-plan"
+      },
+      {
+        "name": "Marine Biological Resources (IMBRSea)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "Universidad de Oviedo", "role": "Partner" },
+          { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+          { "name": "Universidade do Algarve", "role": "Partner" },
+          { "name": "Atlantic Technological University", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+      }
+    ]
   },
   {
     "nombre": "Université de Bordeaux",
@@ -267,7 +370,31 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "ENLIGHT"
+    "alianza": "ENLIGHT",
+    "alianza_url": "https://enlight-eu.org/",
+    "programmes": [
+      {
+        "name": "Environmental Contamination and Toxicology",
+        "type": "Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" },
+          { "name": "Universidade do Porto", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-environmental-contamination-toxicology"
+      },
+      {
+        "name": "Marine Environment and Resources (MER)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "Universidade dos Açores", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-environment-resources-new-plan"
+      }
+    ]
   },
   {
     "nombre": "University of Galway",
@@ -276,7 +403,19 @@
     "region": "Región del Norte y Oeste",
     "nuts": "IE04",
     "pais": "Irlanda",
-    "alianza": "ENLIGHT"
+    "alianza": "ENLIGHT",
+    "alianza_url": "https://enlight-eu.org/",
+    "programmes": [
+      {
+        "name": "Global Media, Democracy and Digital Power",
+        "type": "Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Partner" }
+        ],
+        "url": ""
+      }
+    ]
   },
   {
     "nombre": "Universidad de Las Palmas de Gran Canaria",
@@ -285,7 +424,8 @@
     "region": "Canarias",
     "nuts": "ES70",
     "pais": "España",
-    "alianza": "ERUA"
+    "alianza": "ERUA",
+    "alianza_url": "https://erua-eui.eu/"
   },
   {
     "nombre": "Université d'Angers",
@@ -294,7 +434,8 @@
     "region": "Países del Loira",
     "nuts": "FRG0",
     "pais": "Francia",
-    "alianza": "EU GREEN"
+    "alianza": "EU GREEN",
+    "alianza_url": "https://eugreenalliance.eu/"
   },
   {
     "nombre": "Atlantic Technological University",
@@ -303,7 +444,22 @@
     "region": "Región del Norte y Oeste",
     "nuts": "IE04",
     "pais": "Irlanda",
-    "alianza": "EU GREEN"
+    "alianza": "EU GREEN",
+    "alianza_url": "https://eugreenalliance.eu/",
+    "programmes": [
+      {
+        "name": "Marine Biological Resources (IMBRSea)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Partner" },
+          { "name": "Universidad de Oviedo", "role": "Partner" },
+          { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+          { "name": "Universidade do Algarve", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+      }
+    ]
   },
   {
     "nombre": "Universidade de Évora",
@@ -312,7 +468,8 @@
     "region": "Alentejo",
     "nuts": "PT18",
     "pais": "Portugal",
-    "alianza": "EU GREEN"
+    "alianza": "EU GREEN",
+    "alianza_url": "https://eugreenalliance.eu/"
   },
   {
     "nombre": "Mondragon Unibertsitatea",
@@ -321,7 +478,35 @@
     "region": "Euskadi",
     "nuts": "ES21",
     "pais": "España",
-    "alianza": "EU4DUAL"
+    "alianza": "EU4DUAL",
+    "alianza_url": "https://eu4dual.education/",
+    "programmes": [
+      {
+        "name": "Digital and Sustainable Manufacturing",
+        "type": "Joint Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
+        ],
+        "url": "https://www.mondragon.edu/en/european-master-degree-digital-sustainable-manufacturing-engineering"
+      },
+      {
+        "name": "Green Economy and Sustainable Future",
+        "type": "Master",
+        "role": "Partner",
+        "atlanticPartners": [],
+        "url": ""
+      },
+      {
+        "name": "Project Management for a Digital, Interconnected and Sustainable Industry",
+        "type": "Master",
+        "role": "Coordinator",
+        "atlanticPartners": [
+          { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
+        ],
+        "url": ""
+      }
+    ]
   },
   {
     "nombre": "ESTIA Institute of Technology",
@@ -330,7 +515,28 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "EU4DUAL"
+    "alianza": "EU4DUAL",
+    "alianza_url": "https://eu4dual.education/",
+    "programmes": [
+      {
+        "name": "Digital and Sustainable Manufacturing",
+        "type": "Master",
+        "role": "Co-coordinator",
+        "atlanticPartners": [
+          { "name": "Mondragon Unibertsitatea", "role": "Coordinator" }
+        ],
+        "url": "https://www.mondragon.edu/en/european-master-degree-digital-sustainable-manufacturing-engineering"
+      },
+      {
+        "name": "Project Management for a Digital, Interconnected and Sustainable Industry",
+        "type": "Master",
+        "role": "Co-coordinator",
+        "atlanticPartners": [
+          { "name": "Mondragon Unibertsitatea", "role": "Coordinator" }
+        ],
+        "url": ""
+      }
+    ]
   },
   {
     "nombre": "Université de La Rochelle",
@@ -339,7 +545,8 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "EU-CONEXUS"
+    "alianza": "EU-CONEXUS",
+    "alianza_url": "https://www.eu-conexus.eu/en/"
   },
   {
     "nombre": "South East Technological University",
@@ -348,7 +555,8 @@
     "region": "Región Sur",
     "nuts": "IE05",
     "pais": "Irlanda",
-    "alianza": "EU-CONEXUS"
+    "alianza": "EU-CONEXUS",
+    "alianza_url": "https://www.eu-conexus.eu/en/"
   },
   {
     "nombre": "Bordeaux Sciences Agro",
@@ -357,7 +565,8 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "EU-GIFT"
+    "alianza": "EU-GIFT",
+    "alianza_url": "https://eu-gift.com/"
   },
   {
     "nombre": "Universidade de Trás-os-Montes e Alto Douro",
@@ -366,7 +575,8 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "EU-GIFT"
+    "alianza": "EU-GIFT",
+    "alianza_url": "https://eu-gift.com/"
   },
   {
     "nombre": "Universidade do Porto",
@@ -375,7 +585,21 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "EUGLOH"
+    "alianza": "EUGLOH",
+    "alianza_url": "https://www.eugloh.eu/",
+    "programmes": [
+      {
+        "name": "Environmental Contamination and Toxicology",
+        "type": "Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "Université de Bordeaux", "role": "Partner" },
+          { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-environmental-contamination-toxicology"
+      }
+    ]
   },
   {
     "nombre": "Universidad de Cantabria",
@@ -384,7 +608,8 @@
     "region": "Cantabria",
     "nuts": "ES13",
     "pais": "España",
-    "alianza": "EUNICE"
+    "alianza": "EUNICE",
+    "alianza_url": "https://eunice-university.eu/"
   },
   {
     "nombre": "Universidade dos Açores",
@@ -393,7 +618,20 @@
     "region": "Región Autónoma de Azores",
     "nuts": "PT20",
     "pais": "Portugal",
-    "alianza": "EUNICoast"
+    "alianza": "EUNICoast",
+    "alianza_url": "https://eunicoast.eu/",
+    "programmes": [
+      {
+        "name": "Marine Environment and Resources (MER)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "Université de Bordeaux", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-environment-resources-new-plan"
+      }
+    ]
   },
   {
     "nombre": "Universidade de Santiago de Compostela",
@@ -402,7 +640,8 @@
     "region": "Galicia",
     "nuts": "ES11",
     "pais": "España",
-    "alianza": "EUniWell"
+    "alianza": "EUniWell",
+    "alianza_url": "https://www.euniwell.eu/"
   },
   {
     "nombre": "Université de Nantes",
@@ -411,7 +650,8 @@
     "region": "Países del Loira",
     "nuts": "FRG0",
     "pais": "Francia",
-    "alianza": "EUniWell"
+    "alianza": "EUniWell",
+    "alianza_url": "https://www.euniwell.eu/"
   },
   {
     "nombre": "Université de Limoges",
@@ -420,7 +660,8 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "EUPeace"
+    "alianza": "EUPeace",
+    "alianza_url": "https://www.eupeace.eu/"
   },
   {
     "nombre": "Technological University Dublin",
@@ -429,7 +670,8 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "EUt+"
+    "alianza": "EUt+",
+    "alianza_url": "https://www.univ-tech.eu/"
   },
   {
     "nombre": "Universidade Nova de Lisboa",
@@ -438,7 +680,8 @@
     "region": "Área Metropolitana de Lisboa",
     "nuts": "PT17",
     "pais": "Portugal",
-    "alianza": "EUTOPIA"
+    "alianza": "EUTOPIA",
+    "alianza_url": "https://eutopia-university.eu/"
   },
   {
     "nombre": "Universidad de Oviedo",
@@ -447,7 +690,22 @@
     "region": "Asturias",
     "nuts": "ES12",
     "pais": "España",
-    "alianza": "INGENIUM"
+    "alianza": "INGENIUM",
+    "alianza_url": "https://ingenium-university.eu/",
+    "programmes": [
+      {
+        "name": "Marine Biological Resources (IMBRSea)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Partner" },
+          { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+          { "name": "Universidade do Algarve", "role": "Partner" },
+          { "name": "Atlantic Technological University", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+      }
+    ]
   },
   {
     "nombre": "Munster Technological University",
@@ -456,7 +714,8 @@
     "region": "Región Sur",
     "nuts": "IE05",
     "pais": "Irlanda",
-    "alianza": "INGENIUM"
+    "alianza": "INGENIUM",
+    "alianza_url": "https://ingenium-university.eu/"
   },
   {
     "nombre": "Université de Rouen Normandie",
@@ -465,7 +724,8 @@
     "region": "Normandía",
     "nuts": "FRD2",
     "pais": "Francia",
-    "alianza": "INGENIUM"
+    "alianza": "INGENIUM",
+    "alianza_url": "https://ingenium-university.eu/"
   },
   {
     "nombre": "ISCTE – Instituto Universitário de Lisboa",
@@ -474,7 +734,8 @@
     "region": "Área Metropolitana de Lisboa",
     "nuts": "PT17",
     "pais": "Portugal",
-    "alianza": "PIONEER"
+    "alianza": "PIONEER",
+    "alianza_url": "https://pioneer-alliance.eu/"
   },
   {
     "nombre": "Polytechnic of Leiria",
@@ -483,7 +744,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "RUN-EU"
+    "alianza": "RUN-EU",
+    "alianza_url": "https://run-eu.eu/"
   },
   {
     "nombre": "Polytechnic of Cávado and Ave",
@@ -492,7 +754,8 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "RUN-EU"
+    "alianza": "RUN-EU",
+    "alianza_url": "https://run-eu.eu/"
   },
   {
     "nombre": "Université de Bretagne Occidentale",
@@ -501,7 +764,22 @@
     "region": "Bretaña",
     "nuts": "FRH0",
     "pais": "Francia",
-    "alianza": "SEA-EU"
+    "alianza": "SEA-EU",
+    "alianza_url": "https://sea-eu.org/",
+    "programmes": [
+      {
+        "name": "Marine Biological Resources (IMBRSea)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Partner" },
+          { "name": "Universidad de Oviedo", "role": "Partner" },
+          { "name": "Universidade do Algarve", "role": "Partner" },
+          { "name": "Atlantic Technological University", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+      }
+    ]
   },
   {
     "nombre": "Universidade do Algarve",
@@ -510,7 +788,22 @@
     "region": "Algarve",
     "nuts": "PT15",
     "pais": "Portugal",
-    "alianza": "SEA-EU"
+    "alianza": "SEA-EU",
+    "alianza_url": "https://sea-eu.org/",
+    "programmes": [
+      {
+        "name": "Marine Biological Resources (IMBRSea)",
+        "type": "Erasmus Mundus Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Partner" },
+          { "name": "Universidad de Oviedo", "role": "Partner" },
+          { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+          { "name": "Atlantic Technological University", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+      }
+    ]
   },
   {
     "nombre": "Universidad de Cádiz",
@@ -519,7 +812,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": "SEA-EU"
+    "alianza": "SEA-EU",
+    "alianza_url": "https://sea-eu.org/"
   },
   {
     "nombre": "Polytechnic Institute of Bragança",
@@ -528,7 +822,8 @@
     "region": "Norte",
     "nuts": "PT11",
     "pais": "Portugal",
-    "alianza": "STARS EU"
+    "alianza": "STARS EU",
+    "alianza_url": "https://starseu.org/"
   },
   {
     "nombre": "Universidad de La Laguna",
@@ -537,7 +832,8 @@
     "region": "Canarias",
     "nuts": "ES70",
     "pais": "España",
-    "alianza": "STARS EU"
+    "alianza": "STARS EU",
+    "alianza_url": "https://starseu.org/"
   },
   {
     "nombre": "Universidade Católica Portuguesa",
@@ -546,7 +842,8 @@
     "region": "Área Metropolitana de Lisboa",
     "nuts": "PT17",
     "pais": "Portugal",
-    "alianza": "T4EU"
+    "alianza": "T4EU",
+    "alianza_url": "https://transform4europe.eu/"
   },
   {
     "nombre": "Universidad de Sevilla",
@@ -555,7 +852,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": "ULYSSEUS"
+    "alianza": "ULYSSEUS",
+    "alianza_url": "https://ulysseus.eu/"
   },
   {
     "nombre": "University College Dublin",
@@ -564,7 +862,8 @@
     "region": "Región Este y Midlands",
     "nuts": "IE06",
     "pais": "Irlanda",
-    "alianza": "Una Europa"
+    "alianza": "Una Europa",
+    "alianza_url": "https://www.una-europa.eu/"
   },
   {
     "nombre": "Universidad de Deusto",
@@ -573,7 +872,8 @@
     "region": "Euskadi",
     "nuts": "ES21",
     "pais": "España",
-    "alianza": "UNIC"
+    "alianza": "UNIC",
+    "alianza_url": "https://www.unic.eu/en"
   },
   {
     "nombre": "University College Cork",
@@ -582,7 +882,20 @@
     "region": "Región Sur",
     "nuts": "IE05",
     "pais": "Irlanda",
-    "alianza": "UNIC"
+    "alianza": "UNIC",
+    "alianza_url": "https://www.unic.eu/en",
+    "programmes": [
+      {
+        "name": "Renewable Energy in the Marine Environment",
+        "type": "Joint Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "École Centrale de Nantes", "role": "Partner" }
+        ],
+        "url": "https://master-remplus2.eu/"
+      }
+    ]
   },
   {
     "nombre": "Polytechnic Institute of Coimbra",
@@ -591,7 +904,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "UNIgreen"
+    "alianza": "UNIgreen",
+    "alianza_url": "https://unigreen-alliance.eu/"
   },
   {
     "nombre": "Universidad de Málaga",
@@ -600,7 +914,8 @@
     "region": "Andalucía",
     "nuts": "ES61",
     "pais": "España",
-    "alianza": "UNINOVIS"
+    "alianza": "UNINOVIS",
+    "alianza_url": "https://uninovis.eu/"
   },
   {
     "nombre": "Universidad Pública de Navarra",
@@ -609,7 +924,8 @@
     "region": "Navarra",
     "nuts": "ES22",
     "pais": "España",
-    "alianza": "UNITA"
+    "alianza": "UNITA",
+    "alianza_url": "https://univ-unita.eu/"
   },
   {
     "nombre": "Université de Pau et des Pays de l'Adour",
@@ -618,7 +934,21 @@
     "region": "Nueva Aquitania",
     "nuts": "FRI1",
     "pais": "Francia",
-    "alianza": "UNITA"
+    "alianza": "UNITA",
+    "alianza_url": "https://univ-unita.eu/",
+    "programmes": [
+      {
+        "name": "Environmental Contamination and Toxicology",
+        "type": "Master",
+        "role": "Partner",
+        "atlanticPartners": [
+          { "name": "EHU/UPV", "role": "Coordinator" },
+          { "name": "Université de Bordeaux", "role": "Partner" },
+          { "name": "Universidade do Porto", "role": "Partner" }
+        ],
+        "url": "https://www.ehu.eus/en/web/master/master-environmental-contamination-toxicology"
+      }
+    ]
   },
   {
     "nombre": "Universidade da Beira Interior",
@@ -627,7 +957,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "UNITA"
+    "alianza": "UNITA",
+    "alianza_url": "https://univ-unita.eu/"
   },
   {
     "nombre": "Polytechnic of Guarda",
@@ -636,7 +967,8 @@
     "region": "Centro",
     "nuts": "PT16",
     "pais": "Portugal",
-    "alianza": "UNITA"
+    "alianza": "UNITA",
+    "alianza_url": "https://univ-unita.eu/"
   },
   {
     "nombre": "Universidade de Lisboa",
@@ -645,6 +977,7 @@
     "region": "Área Metropolitana de Lisboa",
     "nuts": "PT17",
     "pais": "Portugal",
-    "alianza": "Unite!"
+    "alianza": "Unite!",
+    "alianza_url": "https://www.unite-university.eu/"
   }
 ]

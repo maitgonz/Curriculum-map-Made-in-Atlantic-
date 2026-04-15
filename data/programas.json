@@ -1,79 +1,165 @@
 [
   {
-    "programName": "Master in Environmental Contamination and Toxicology",
-    "color": "#FFEA4D",
-    "universities": [
-      { "name": "EHU/UPV", "role": "Coordinator" },
-      { "name": "Université de Bordeaux", "role": "Partner" },
-      { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" },
-      { "name": "Universidade do Porto", "role": "Partner" }
-    ]
-  },
+  "programName": "Environmental Contamination and Toxicology",
+  "color": "#FFEA4D",
+  "status": "Running",
+  "programmeType": "Master",
+  "universities": [
+    { "name": "EHU/UPV", "role": "Coordinator" },
+    { "name": "Université de Bordeaux", "role": "Partner" },
+    { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" },
+    { "name": "Universidade do Porto", "role": "Partner" }
+  ],
+  "coordinators": [
+    { "name": "EHU/UPV", "role": "Coordinator" }
+  ],
+  "atlanticPartners": [
+    { "name": "Université de Bordeaux", "role": "Partner" },
+    { "name": "Université de Pau et des Pays de l'Adour", "role": "Partner" },
+    { "name": "Universidade do Porto", "role": "Partner" }
+  ],
+  "url": "https://www.ehu.eus/en/web/master/master-environmental-contamination-toxicology"
+},
+ {
+  "programName": "Renewable Energy in the Marine Environment",
+  "color": "#FFA34D",
+  "status": "Running",
+  "programmeType": "Master",
+  "universities": [
+    { "name": "EHU/UPV", "role": "Coordinator" },
+    { "name": "University College Cork", "role": "Partner" },
+    { "name": "École Centrale de Nantes", "role": "Partner" }
+  ],
+  "coordinators": [
+    { "name": "EHU/UPV", "role": "Coordinator" }
+  ],
+  "atlanticPartners": [
+    { "name": "University College Cork", "role": "Partner" },
+    { "name": "École Centrale de Nantes", "role": "Partner" }
+  ],
+  "url": "https://master-remplus2.eu/"
+},
   {
-    "programName": "Joint Master in Marine Environment and Resources",
-    "color": "#FFA34D",
-    "universities": [
-      { "name": "EHU/UPV", "role": "Coordinator" },
-      { "name": "University College Cork", "role": "Partner" },
-      { "name": "École Centrale de Nantes", "role": "Partner" }
-    ]
-  },
-  {
-    "programName": "Joint Bachelor in European Sustainable Cities and Communities",
+    "programName": "European Sustainable Cities and Communities",
     "color": "#B30000",
+    "status": "In development",
+    "programmeType": "Joint Bachelor",
     "universities": [
       { "name": "EHU/UPV", "role": "Coordinator" }
-    ]
-  },
+    ],
+    "coordinators": [
+    { "name": "EHU/UPV", "role": "Coordinator" }
+    ],
+    "atlanticPartners": [],
+    "url": ""
+},
   {
-    "programName": "Master in Global Media, Democracy and Digital Power",
+    "programName": "Global Media, Democracy and Digital Power",
     "color": "#83FC3A",
+    "status": "In development",
+    "programmeType": "Master",
     "universities": [
       { "name": "EHU/UPV", "role": "Partner" },
       { "name": "University of Galway", "role": "Coordinator" }
-    ]
-  },
+    ],
+    "coordinators": [
+      { "name": "University of Galway", "role": "Coordinator" }
+    ],
+    "atlanticPartners": [
+      { "name": "EHU/UPV", "role": "Partner" }
+    ],
+    "url": ""
+},
   {
-    "programName": "Joint Master in Digital and Sustainable Manufacturing",
+    "programName": "Digital and Sustainable Manufacturing",
     "color": "#4CB8ED",
+    "status": "Running",
+    "programmeType": "Master",
     "universities": [
       { "name": "Mondragon Unibertsitatea", "role": "Coordinator" },
       { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
-    ]
-  },
-  {
-    "programName": "Master Green Economy and Sustainable Future",
-    "color": "#3A45DE",
-    "universities": [
-      { "name": "Mondragon Unibertsitatea", "role": "Partner" }
-    ]
-  },
-  {
-    "programName": "Master in Project Management for a Digital and Sustainable Industry",
-    "color": "#7C3ADE",
-    "universities": [
+    ],
+    "coordinators": [
       { "name": "Mondragon Unibertsitatea", "role": "Coordinator" },
       { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
-    ]
-  },
+    ],
+    "atlanticPartners": [],
+    "url": "https://www.mondragon.edu/en/european-master-degree-digital-sustainable-manufacturing-engineering"
+},
   {
-    "programName": "Erasmus Mundus Master in Marine Environment and Resources",
+  "programName": "Green Economy and Sustainable Future",
+  "color": "#3A45DE",
+  "status": "In development",
+  "programmeType": "Master",
+  "universities": [
+    { "name": "Mondragon Unibertsitatea", "role": "Partner" }
+  ],
+ "coordinators": [
+    { "name": "Savonia UAS", "role": "Leader", "atlantic": false },
+    { "name": "FH Joanneum", "role": "Co-Leader", "atlantic": false }
+    ],
+  "atlanticPartners": [
+    { "name": "Mondragon Unibertsitatea", "role": "Partner" }
+  ],
+  "url": ""
+},
+ {
+  "programName": "Project Management for a Digital, Interconnected and Sustainable Industry",
+  "color": "#7C3ADE",
+  "status": "In development",
+  "programmeType": "Master",
+  "universities": [
+    { "name": "Mondragon Unibertsitatea", "role": "Coordinator" },
+    { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
+  ],
+  "coordinators": [
+    { "name": "Mondragon Unibertsitatea", "role": "Coordinator" },
+    { "name": "ESTIA Institute of Technology", "role": "Co-coordinator" }
+  ],
+  "atlanticPartners": [],
+  "url": ""
+},
+  {
+    "programName": "Marine Environment and Resources (MER)",
     "color": "#00B35E",
+    "status": "Running",
+    "programmeType": "Master",
     "universities": [
       { "name": "EHU/UPV", "role": "Coordinator" },
       { "name": "Université de Bordeaux", "role": "Partner" },
       { "name": "Universidade dos Açores", "role": "Partner" }
-    ]
+    ],
+    "coordinators": [
+      { "name": "EHU/UPV", "role": "Coordinator" }
+    ],
+    "atlanticPartners": [
+      { "name": "Université de Bordeaux", "role": "Partner" },
+      { "name": "Universidade dos Açores", "role": "Partner" }
+    ],
+    "url": "https://www.ehu.eus/en/web/master/master-marine-environment-resources-new-plan"
   },
   {
-    "programName": "Erasmus Mundus Master in Marine Biological Resources",
-    "color": "#FF4D9D",
-    "universities": [
-      { "name": "EHU/UPV", "role": "Partner" },
-      { "name": "Universidad de Oviedo", "role": "Partner" },
-      { "name": "Université de Bretagne Occidentale", "role": "Partner" },
-      { "name": "Universidade do Algarve", "role": "Partner" },
-      { "name": "Atlantic Technological University", "role": "Partner" }
-    ]
-  }
+  "programName": "Marine Biological Resources (IMBRSea)",
+  "color": "#FF4D9D",
+  "status": "Running",
+  "programmeType": "Erasmus Mundus Master",
+  "universities": [
+    { "name": "EHU/UPV", "role": "Partner" },
+    { "name": "Universidad de Oviedo", "role": "Partner" },
+    { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+    { "name": "Universidade do Algarve", "role": "Partner" },
+    { "name": "Atlantic Technological University", "role": "Partner" }
+  ],
+  "coordinators": [
+    { "name": "Ghent University", "role": "Coordinator", "atlantic": false }
+  ],
+  "atlanticPartners": [
+    { "name": "EHU/UPV", "role": "Partner" },
+    { "name": "Universidad de Oviedo", "role": "Partner" },
+    { "name": "Université de Bretagne Occidentale", "role": "Partner" },
+    { "name": "Universidade do Algarve", "role": "Partner" },
+    { "name": "Atlantic Technological University", "role": "Partner" }
+  ],
+  "url": "https://www.ehu.eus/en/web/master/master-marine-biological-resources"
+}
 ]
