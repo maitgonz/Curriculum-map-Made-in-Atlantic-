@@ -182,12 +182,19 @@
     color: black;
   }
 
+  .filters-note {
+    width: 100%;
+    font-size: 12px;
+    color: #505050;
+    margin-top: 4px;
+  }
+
   </style>
 <body>
   <h1>
     EU Higher Education Curricula and specialisations map “Made in Atlantic”<br>
     <span style="font-weight: normal; font-size: 16px;">
-      European Degree Label and European Universities Alliances
+      European Degree Label (EDL) and European Universities Alliances
     </span>
   </h1>
 
@@ -200,7 +207,7 @@
     </div>
 
     <div class="filter-group">
-      <label for="programaSelect">EDL Masters & Postgraduates:</label>
+      <label for="programaSelect">EDL Masters &amp; Postgraduates*</label>
       <select id="programaSelect">
         <option value="todos">All</option>
       </select>
@@ -219,6 +226,11 @@
         <option value="todos">All</option>
       </select>
     </div>
+
+    <span class="filters-note">
+      * Under construction: pending results of the ERASMUS-EDU-2025-PE-EUED call
+    </span>
+
   </div>
 
   <div id="map"></div>

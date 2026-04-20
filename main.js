@@ -365,7 +365,10 @@ function aplicarFiltro() {
     console.log("Selected programme:", programaSeleccionado);
     console.log("Line programme:", item.programmeName);
 
+    const ocultarLineasSinAlianza = alianzaSeleccionada === "Sin alianza europea";
+
     const mostrarLinea =
+      !ocultarLineasSinAlianza &&
       (universidadesVisibles.has(item.universityA) ||
       universidadesVisibles.has(item.universityB)) &&
       coincideProgramaLinea;
