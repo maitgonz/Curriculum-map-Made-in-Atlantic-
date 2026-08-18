@@ -43,9 +43,54 @@ const alianzaSelect = document.getElementById('alianzaSelect');
 const programaSelect = document.getElementById('programaSelect');
 const regionSelect = document.getElementById('regionSelect');
 const paisSelect = document.getElementById('paisSelect');
+const coveSectorSelect = document.getElementById('coveSectorSelect');
+const coveRegionSelect = document.getElementById('coveRegionSelect');
+const coveCountrySelect = document.getElementById('coveCountrySelect');
+
+// References to mode selector
+const universitiesMode = document.getElementById('universitiesMode');
+const covesMode = document.getElementById('covesMode');
 
 const closePanelButton = document.getElementById('close-panel');
 const sidePanel = document.getElementById('side-panel');
+
+universitiesMode.addEventListener('click', function () {
+  universitiesMode.classList.add('active');
+  covesMode.classList.remove('active');
+
+  document.getElementById('controls').classList.remove('hidden');
+  document.getElementById('cove-controls').classList.add('hidden');
+
+  // Ocultar CoVEs
+  marcadoresCoves.forEach(item => {
+    map.removeLayer(item.marker);
+  });
+
+  // Restaurar universidades y líneas según los filtros actuales
+  aplicarFiltro();
+});
+
+covesMode.addEventListener('click', function () {
+  covesMode.classList.add('active');
+  universitiesMode.classList.remove('active');
+
+  document.getElementById('controls').classList.add('hidden');
+  document.getElementById('cove-controls').classList.remove('hidden');
+
+  // Ocultar universidades
+  marcadoresUniversidades.forEach(item => {
+    map.removeLayer(item.marker);
+  });
+
+  // Ocultar líneas de programas
+  lineasProgramas.forEach(item => {
+    map.removeLayer(item.visible);
+    map.removeLayer(item.hover);
+  });
+
+  // Mostrar CoVEs
+  aplicarFiltroCoves();
+});
 
 function closeSidePanel() {
   if (sidePanel) {
@@ -105,6 +150,7 @@ const coloresPorPrograma = {};
 let marcadoresUniversidades = [];
 let universidadesPorNombre = {};
 let lineasProgramas = [];
+let marcadoresCoves = [];
 
 function openSidePanel(data) {
   const panel = document.getElementById("side-panel");
@@ -379,6 +425,29 @@ function aplicarFiltro() {
     } else {
       map.removeLayer(item.visible);
       map.removeLayer(item.hover);
+    }
+  });
+}
+
+function aplicarFiltroCoves() {
+  const paisSeleccionado = coveCountrySelect.value;
+  const regionSeleccionada = coveRegionSelect.value;
+
+  marcadoresCoves.forEach(item => {
+    const coincidePais =
+      paisSeleccionado === "todos" ||
+      item.country === paisSeleccionado;
+
+    const coincideRegion =
+      regionSeleccionada === "todas" ||
+      item.region === regionSeleccionada;
+
+    const mostrar = coincidePais && coincideRegion;
+
+    if (mostrar) {
+      item.marker.addTo(map);
+    } else {
+      map.removeLayer(item.marker);
     }
   });
 }
@@ -677,4 +746,84 @@ fetch('data/universidades.json')
     console.error('Error al cargar universidades:', error);
 
 
+  });
+
+  fetch('data/coves.json')
+  .then(response => response.json())
+  .then(coves => {
+    coves.forEach(cove => {
+  const punto = L.circleMarker([cove.lat, cove.lng], {
+    radius: 8,
+    fillColor: "#334155",
+    color: "#ffffff",
+    weight: 1.5,
+    fillOpacity: 0.9
+  });
+
+  punto.bindTooltip(`
+    <strong>${cove.name}</strong><br>
+    ${cove.region}, ${cove.country}
+  `);
+
+  marcadoresCoves.push({
+    marker: punto,
+    name: cove.name,
+    country: cove.country,
+    region: cove.region,
+    sector: cove.sector || "",
+    website: cove.website || ""
+  });
+});
+    const sectoresUnicos = new Set();
+    const regionesCoveUnicas = new Set();
+    const paisesCoveUnicos = new Set();
+
+    coves.forEach(cove => {
+      if (cove.sector && cove.sector.trim() !== "") {
+        sectoresUnicos.add(cove.sector);
+      }
+
+      if (cove.region && cove.region.trim() !== "") {
+        regionesCoveUnicas.add(cove.region);
+      }
+
+      if (cove.country && cove.country.trim() !== "") {
+        paisesCoveUnicos.add(cove.country);
+      }
+    });
+
+    Array.from(sectoresUnicos)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach(sector => {
+        const option = document.createElement('option');
+        option.value = sector;
+        option.textContent = sector;
+        coveSectorSelect.appendChild(option);
+      });
+
+    Array.from(regionesCoveUnicas)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach(region => {
+        const option = document.createElement('option');
+        option.value = region;
+        option.textContent = region;
+        coveRegionSelect.appendChild(option);
+      });
+
+    Array.from(paisesCoveUnicos)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        coveCountrySelect.appendChild(option);
+     });
+
+    // Activar filtros CoVE
+    coveCountrySelect.addEventListener('change', aplicarFiltroCoves);
+    coveRegionSelect.addEventListener('change', aplicarFiltroCoves);
+
+  })
+  .catch(error => {
+    console.error('Error loading coves.json:', error);
   });
