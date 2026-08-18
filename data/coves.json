@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Agrifood4Future - France",
+    "country": "France",
+    "region": "Bretagne",
+    "lat": 48.11519,
+    "lng": -1.71428,
+    "sector": "",
+    "website": ""
+  },
+
+  {
+    "name": "Aedil Dairy Ireland",
+    "country": "Ireland",
+    "region": "Southern",
+    "lat": 51.892320,
+    "lng": -8.492830,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "Agrinext Ireland",
+    "country": "Ireland",
+    "region": "Southern",
+    "lat": 52.686025,
+    "lng": -7.826176,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "AI4VET4AI Ireland",
+    "country": "Ireland",
+    "region": "Eastern and Midland",
+    "lat": 53.330433,
+    "lng": -6.279025,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "CEDCE Ireland",
+    "country": "Ireland",
+    "region": "Northern and Western",
+    "lat": 54.279163,
+    "lng": -8.461323,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "T-shore Ireland",
+    "country": "Ireland",
+    "region": "Northern and Western",
+    "lat": 54.951560,
+    "lng": -7.720700,
+    "sector": "",
+    "website": ""
+  },
+
+  {
+    "name": "Agrifood4Future - Portugal",
+    "country": "Portugal",
+    "region": "Centro",
+    "lat": 39.924474,
+    "lng": -7.238823,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "AILEEN Portugal",
+    "country": "Portugal",
+    "region": "Área Metropolitana de Lisboa",
+    "lat": 38.743399,
+    "lng": -9.304393,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "GREENOVET - European VET Excellence Platform for Green Innovation (Portugal)",
+    "country": "Portugal",
+    "region": "Centro",
+    "lat": 39.750318,
+    "lng": -8.812302,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "OVER-SEES",
+    "country": "Portugal",
+    "region": "Área Metropolitana de Lisboa",
+    "lat": 38.747848,
+    "lng": -9.153432,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "SHOREWINNER",
+    "country": "Portugal",
+    "region": "Norte",
+    "lat": 41.178997,
+    "lng": -8.608694,
+    "sector": "",
+    "website": ""
+  },
+
+  {
+    "name": "LCAMP",
+    "country": "Spain",
+    "region": "Euskadi",
+    "lat": 43.291389,
+    "lng": -1.899444,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "VLF4EU",
+    "country": "Spain",
+    "region": "Euskadi",
+    "lat": 43.211483,
+    "lng": -2.410533,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "EXCELLENT ADVANCED MANUFACTURING 4.0",
+    "country": "Spain",
+    "region": "Euskadi",
+    "lat": 42.8467,
+    "lng": -2.6716,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "AILEEN Spain (Gijon)",
+    "country": "Spain",
+    "region": "Asturias",
+    "lat": 43.525694,
+    "lng": -5.623682,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "ACCESSCOVE - Spain",
+    "country": "Spain",
+    "region": "Andalucía",
+    "lat": 36.734000,
+    "lng": -4.548000,
+    "sector": "",
+    "website": ""
+  },
+  {
+    "name": "Centro Superior de Formación Europa Sur (CESUR)",
+    "country": "Spain",
+    "region": "Andalucía",
+    "lat": 36.716330,
+    "lng": -4.423300,
+    "sector": "",
+    "website": ""
+  }
+]
