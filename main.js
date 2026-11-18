@@ -350,7 +350,7 @@ function obtenerColorAlianza(nombreAlianza) {
   if (
     !nombreAlianza ||
     nombreAlianza.trim() === "" ||
-    nombreAlianza === "Sin alianza europea"
+    nombreAlianza === "Without European Alliance"
   ) {
     return "#9ca3af"; // gris
   }
@@ -411,7 +411,7 @@ function aplicarFiltro() {
     console.log("Selected programme:", programaSeleccionado);
     console.log("Line programme:", item.programmeName);
 
-    const ocultarLineasSinAlianza = alianzaSeleccionada === "Sin alianza europea";
+    const ocultarLineasSinAlianza = alianzaSeleccionada === "Without European Alliance";
 
     const mostrarLinea =
       !ocultarLineasSinAlianza &&
@@ -597,7 +597,7 @@ fetch('data/universidades.json')
 
       const alianza = universidad.alianza && universidad.alianza.trim() !== ""
         ? universidad.alianza
-        : "Sin alianza europea";
+        : "Without European Alliance";
 
       const color = obtenerColorAlianza(universidad.alianza);
 
@@ -618,7 +618,7 @@ fetch('data/universidades.json')
       punto.bindTooltip(`
         <strong>${universidad.nombre}</strong><br>
         ${universidad.region}, ${universidad.pais}<br>
-        Alianza: ${alianza}
+        Alliance: ${alianza}
       `);
 
       punto.on('click', function () {
